@@ -1,0 +1,12 @@
+
+---- API KEY V3 -----
+151c67256d4a28461484c4a528464e9e
+
+
+
+----- API access Token V4 ----
+eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxNTFjNjcyNTZkNGEyODQ2MTQ4NGM0YTUyODQ2NGU5ZSIsInN1YiI6IjYzMjEzNDk3OWEzYzQ5MDA3ZGRlZWQyMiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.dvq65tEoktPoKqxdWtdW9gt4IxB9tl3Y-k1DsNG7How
+
+
+--- Example API ---
+https://api.themoviedb.org/3/movie/550?api_key=151c67256d4a28461484c4a528464e9e

@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './components/Header/Header'
 import MainNavigation from './components/MainNavigation';
-import {Container} from '@mui/material'
+import { Container } from '@mui/material'
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Trending from './pages/Trending/Trending';
 import Movies from './pages/Movies/Movies';
@@ -16,14 +16,14 @@ function App() {
       <div className='app'>
         <Container>
           <Switch>
-            <Route path='/' component={Trending}  exact />
-            <Route path='/movies' component={Movies}   />
-            <Route path='/series' component={Series}   />
-            <Route path='/search' component={Search}  />
+            <Route path='/' component={Trending} exact />
+            <Route path='/movies' component={Movies} />
+            <Route path='/series' component={Series} />
+            <Route path='/search' component={Search} />
           </Switch>
         </Container>
       </div>
-      <MainNavigation/>
+      <MainNavigation />
     </BrowserRouter>
   );
 }
