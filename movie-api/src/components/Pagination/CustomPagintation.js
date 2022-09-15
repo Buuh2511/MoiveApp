@@ -4,7 +4,7 @@ import { Pagination } from "@mui/material";
 
 
 
-const CustomPagination = ({ setPage, numOfPages = 10 }) => {
+const CustomPagination = ({ setPage, numOfPages }) => {
 
 
     const handlePageChange = (page) => {
@@ -24,9 +24,9 @@ const CustomPagination = ({ setPage, numOfPages = 10 }) => {
             <Pagination
                 sx={{
                     '.MuiButtonBase-root' : {
-                        background:'white',
-                        color:'red'
-                    }
+                        background:'whitesmoke',
+                        color:'#004D40'
+                    },
                 }}
                 onChange={(e) => handlePageChange(e.target.textContent)}
                 count={numOfPages}

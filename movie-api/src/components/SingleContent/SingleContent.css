@@ -11,9 +11,12 @@
   }
   
   .media:hover {
-    background-color: white;
-    color: black;
+    background-color: #546E7A;
+    color: #ECEFF1;
     cursor: pointer;
+    transition-delay: 0.5;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
   }
   
   @media (max-width: 550px) {

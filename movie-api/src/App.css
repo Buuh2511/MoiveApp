@@ -4,8 +4,8 @@
   
   .app {
     min-height: 100vh;
-    background-color: #39445a;
-    color: white;
+    background-color: #212121;
+    color: whitesmoke;
     padding-top: 130px;
     padding-bottom: 70px;
   }
@@ -24,7 +24,7 @@
     font-size: 2vw;
     padding: 4px;
     border-radius: 50px;
-    color: white;
+    color: whitesmoke;
   }
   
   @media (max-width: 1000px) {

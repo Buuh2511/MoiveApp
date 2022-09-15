@@ -11,7 +11,7 @@ import "./Trending.css";
 
 export default function Trending() {
 
-
+    const [numOfPages, setNumOfPages] = useState(1)
     const [listData, setListData] = useState([]);
     const [page, setPage] = useState(1);
 
@@ -21,6 +21,7 @@ export default function Trending() {
         https://api.themoviedb.org/3/trending/all/day?api_key=${apiKey}&page=${page}
         `);
         setListData(data.results)
+        setNumOfPages(data.total_pages);
     }
 
     useEffect(() => {
@@ -35,10 +36,10 @@ export default function Trending() {
                 Trending
             </span>
             <div
-            style={{
-                padding:"20px"
-            }} 
-            className="trending">
+                style={{
+                    padding: "20px"
+                }}
+                className="trending">
                 {
                     listData && listData.map((item) => (
 
@@ -54,7 +55,8 @@ export default function Trending() {
                     ))
                 }
             </div>
-            <CustomPagination setPage={setPage} />
+            {numOfPages > 1 &&
+                <CustomPagination setPage={setPage} numOfPages={numOfPages} />}
         </div>
     )
 }
